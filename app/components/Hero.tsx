@@ -1,6 +1,8 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import Magicbutton from './ui/Magicbutton'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -25,6 +27,13 @@ const Hero = () => {
           </TextGenerateEffect>
           <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi,I am suman a Nextjs Developer from Nepal
+          </div>
+          <div className="flex justify-center items-center py-3">
+             <Magicbutton
+             title="Show My projects"
+             position="right"
+             icon={<FaLocationArrow />}
+             ></Magicbutton>
           </div>
 
         </div>
